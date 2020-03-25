@@ -13,9 +13,9 @@
     const elem = document.getElementById('3d-graph');
 
     const Graph = ForceGraph3D()(elem)
-      .jsonUrl('../datasets/blocks.json')
-      .nodeAutoColorBy('user')
-      .nodeLabel(node => `${node.user}: ${node.description}`)
+      .jsonUrl('../datasets_raumgleiter/behavior-mapping_export.json')
+      .nodeAutoColorBy('type')
+      .nodeLabel(node => `${node.type}: ${node.id}`)
       .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
       .onNodeClick(node => window.open(`https://bl.ocks.org/${node.user}/${node.id}`, '_blank'));
   </script>

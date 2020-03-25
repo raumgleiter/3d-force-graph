@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    {
+      "id": "ProjectManagerCGI",
+      "type": "ProjectManagerCGI"
+    },
+    {
+      "id": "AuftraggeberVisus",
+      "type": "mbostock"
+    },
+    {
+      "id": "DatengrundlageValidieren",
+      "type": ""
+    },
+    {
+      "id": "DatengrundlageHochladen",
+      "type": ""
+    }
+  ],
+  "links": [
+    {"source":     "ProjectManagerCGI",    "target":     "DatengrundlageValidieren"},
+    {"source":     "AuftraggeberVisus",    "target":     "DatengrundlageHochladen"}
+  ]
+}
